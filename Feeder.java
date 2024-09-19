@@ -12,6 +12,7 @@ public class Feeder {
      */
     public void simulateOneDay(int numBirds)
     {
+
     }
 
     /**
@@ -25,8 +26,14 @@ public class Feeder {
     }
 
     public int getCurrentFood()
-    {
-        return currentFood;
-    }
+        {
+            return currentFood;
+        }
 
+    public Feeder(int c)
+        {
+            currentFood=c;
+        }
+
+    public Feeder()  {}
 }
