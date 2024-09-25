@@ -27,25 +27,18 @@ public class Feeder {
      * feeder in this simulation, as described in part (b) Preconditions:
      * numBirds > 0, numDays > 0
      */
-    public int simulateManyDays(int numBirds, int numDays) {
-        return 0;
-    }
-
+    public int simulateManyDays(int numBirds, int numDays)
     {
-
         int days = 0;
 
-        while (numDays > 0) ;
-            {
-
+        while (numDays > 0);
+        {
+            if (currentFood == 0) return days;
             simulateOneDay(numBirds);
-
             days++;
-            if (currentFood == 0) { return days; }
-
-            }
-
-
+            numDays--;
+        }
+        return days;
     }
 
 
