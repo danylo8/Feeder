@@ -1,13 +1,16 @@
-public class Main {
+;public class Main {
     public static void main(String[] args)
     {
         Feeder f = new Feeder();
         Feeder g=new Feeder(500);
-        System.out.println(g);
-        System.out.println(g.getCurrentFood());
+//        System.out.println(g);
+//        System.out.println(g.getCurrentFood());
 
-        int numBirds = 10;
-        int numDays = 4;
+        Feeder j = new Feeder(2400);
+        System.out.println("Days with food: " + j.simulateManyDays(10,5));
+
+//        int numBirds = 10;
+//        int numDays = 4;
 
 //        g.simulateOneDay(12);
 
@@ -41,14 +44,6 @@ public class Main {
 //        System.out.println(i);
 
 
-        Feeder j = new Feeder(2400);
-        System.out.println(j.simulateManyDays(10,4));
-
-        Feeder m=new Feeder(250);
-        System.out.println(m.simulateManyDays(10,5));
-
-        Feeder n=new Feeder(250);
-        System.out.println(n.simulateManyDays(10,5));
 
     }}
 
